@@ -1,0 +1,173 @@
+Use Nano Banana to generate App ICON and Feature Graphics for play store
+
+Prompt-1 feature_graphics
+
+Generate a feature graphic for an android app submission to Google play store make sure it looks modern, professional and premium
+
+App Details
+
+How Many Times You Zoned Out
+
+Do not add any company logo or brand which violates google play store policies also follow Google Play performance, ranking, accolades or awards, user testimonials, or price and promotional information. For example, “Best", “#1”, “Top”, “New”, “Discount”, “Sale”, “Free”, or “Million Downloads”. Completely clean design with absolutely NO numbers, NO ribbons, NO checkmarks, NO awards, and NO badges. Don't mention any features of the app just App name and don't add any Mobile screen.
+
+----------------------------------------------------------------------------------
+Prompt-2
+
+create image
+A modern, vibrant, and premium 2D app icon for a How Many Times You Zoned Out App. Completely clean design with absolutely NO text, NO numbers, NO ribbons, NO checkmarks, NO awards, and NO badges. Just the elegant central symbol on a rounded square backing. High resolution, perfectly cantered also follow Google Play performance, ranking, accolades or awards, user testimonials, or price and promotional information. For example, “Best", “#1”, “Top”, “New”, “Discount”, “Sale”, “Free”, or “Million Downloads”.
+
+======================================================================================================================================
+Create Project and necessary files and directories
+
+flutter create --project-name zone_out . && touch playstorenotes.txt && touch privacy_policy.txt && mkdir -p play_store/phone && mkdir -p play_store/7inchTablet && mkdir -p play_store/10inchTablet
+
+./rename_aapname_packagename.sh "How Many Times You Zoned Out" "com.shankardakolia.zoneout"
+
+======================================================================================================================================
+
+Privacy Policy for How Many Times You Zoned Out
+Email: shankardakolia@gmail.com
+
+This app does not collect or share any user data. All game progress and scores are stored locally on your device using a secure SQLite database. We do not have access to your personal information or usage patterns.
+- No data collection
+- All data stored locally
+
+======================================================================================================================================
+
+How Many Times You Zoned Out
+
+You are a senior Flutter architect and game developer.
+
+Your task is to build a COMPLETE production-ready Flutter mobile app, Flutter project is ALREADY created and open.
+
+--------------------------------------------------
+🚨 STRICT RULES
+--------------------------------------------------
+- Do NOT ask questions
+- Do NOT skip logic
+- Do NOT give pseudo code
+- Do NOT leave TODOs
+- Generate FULL working code
+- Always use LATEST STABLE versions from pub.dev
+- Flutter project is ALREADY created and open
+- DO NOT run `flutter create`
+- ONLY modify existing project files (lib/, android/, ios/, pubspec.yaml, etc.)
+- Code must compile after `flutter pub get`
+- Always ensure MainActivity.kt has the proper class declaration with empty body is NOT enough
+- When changing Android package ID, must also create the matching Kotlin package directory structure
+- Update AndroidManifest.xml activity name to match the new package path
+- Always verify with flutter analyse and build a debug APK first before release
+- When using go_router for navigation, always use context.push('/route') or context.go('/route') instead of Navigator.pushNamed() or Navigator.push(). Never mix Navigator API with go_router.
+
+Note if you are using  share_plus: ^10.1.4   The class is still Share not SharePlus in v10.1.4
+
+------------------------------------------------------
+## 🔐 ANDROID SIGNING Leave it to me
+------------------------------------------------------
+
+Signing is handled already manually also android App Name and Android packagae name is already handled manually don't touch it
+
+--------------------------------------
+
+--------------------------------------------------
+🎯 APP REQUIREMENTS
+--------------------------------------------------
+Build How Many Times You Zoned Out app
+
+FEATURES:
+Tap each time you zone out
+Duration approx. (seconds)
+Daily "zone out" score
+Trend chart
+Share brain fog
+
+--------------------------------------------------
+🗄 DATABASE (MANDATORY SQLITE)
+--------------------------------------------------
+- Use SQLite ONLY (NO Hive)
+- Use sqflite + path packages
+- Create proper database helper class
+- Use proper CRUD operations
+- Use async/await correctly
+- No raw loose queries in UI layer
+
+--------------------------------------------------
+⚙️ STATE MANAGEMENT
+--------------------------------------------------
+- Use Provider ONLY (ChangeNotifier)
+- Use MultiProvider in main.dart
+- Separate providers for each
+
+--------------------------------------------------
+🧭 NAVIGATION
+--------------------------------------------------
+- Use go_router
+Routes:
+/tracker
+/stats
+
+--------------------------------------------------
+🎨 UI REQUIREMENTS
+--------------------------------------------------
+- Material 3 design
+- Fully responsive
+- Clean premium UI
+
+COLORS:
+- Button Color: #1E3A8A
+- Background: PURE WHITE
+
+SCREENS:
+
+1 Tracker Screen
+	"Zoned out" button
+	Duration slider (optional)
+	Today's count
+	Save entry
+
+2 Stats Screen
+	Zone out frequency chart
+	Best focus day
+	Share report
+
+-----------------------------------------------------------------------------
+📦 ADDITIONAL REQUIREMENTS Give this first after creating implementation plan
+-----------------------------------------------------------------------------
+
+Generate files in ROOT if not exist:
+
+1. playstorenotes.txt
+   - App Name : [App Name]
+   - Email : shankardakolia@gmail.com
+   - Short Description [make sure you follows Google Play Store guidelines 80 characters limit]
+   - Full Description (a simple full description don't mention apps feature)
+   - Release Notes
+
+--------------------------------------------------
+🧠 ARCHITECTURE
+--------------------------------------------------
+Use clean structure:
+
+lib/
+ ├── models/
+ ├── database/
+ ├── providers/
+ ├── screens/
+ ├── widgets/
+ ├── routes/
+
+- No unused files
+- No dead code
+- No inline DB logic inside UI
+
+--------------------------------------------------
+🚀 BUILD REQUIREMENT
+--------------------------------------------------
+Final app MUST run:
+
+flutter pub get
+flutter build appbundle --release
+
+WITHOUT any manual fixes
+
+--------------------------------------------------

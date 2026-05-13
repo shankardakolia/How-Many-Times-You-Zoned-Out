@@ -1,0 +1,8 @@
+Privacy Policy for How Many Times You Zoned Out
+Email: shankardakolia@gmail.com
+
+This app does not collect or share any user data. All game progress and scores are stored locally on your device using a secure SQLite database. We do not have access to your personal information or usage patterns.
+- No data collection
+- All data stored locally
+
+https://gist.githubusercontent.com/shankardakolia/e0af25870ca6d0e54d958a16387bcfc1/raw/1a512dfde82398d3b9d13027b38b6b6cd43f0dde/privacy_policy.txt
