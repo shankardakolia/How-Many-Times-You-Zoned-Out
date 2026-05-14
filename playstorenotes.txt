@@ -1,0 +1,18 @@
+App Name: How Many Times You Zoned Out
+Email: shankardakolia@gmail.com
+
+Short Description:
+Track your daily zone-outs with a simple tap. Build focus awareness and understand your attention patterns.
+
+Full Description:
+Ever find yourself drifting off during meetings, study sessions, or daily tasks? How Many Times You Zoned Out helps you build awareness of your focus patterns with a simple, elegant tap tracker. Just tap each time you zone out, optionally note the duration, and watch your daily trends unfold. Over time, you will gain valuable insights into your attention span and identify your best focus days.
+
+Release Notes:
+Version 1.0.0
+- Initial release
+- Tap to log zone-outs
+- Duration slider for approximate seconds
+- Daily zone-out count
+- 7-day trend chart
+- Share brain fog report
+- SQLite-powered local storage
